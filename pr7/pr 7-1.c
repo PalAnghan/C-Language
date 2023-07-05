@@ -7,7 +7,7 @@ void addition()
 	printf("enter a second number:- ");
 	scanf("%f",&n2);
  
-	printf("the addition of %f and %f is %f\n",n1,n2,n1+n2);
+	printf("the addition of %f and %f : %f\n",n1,n2,n1+n2);
 }
 void decress()
 {
@@ -17,7 +17,7 @@ void decress()
 	printf("enter a second number:- ");
 	scanf("%f",&n2);
  
-	printf("the decress of %f and %f is %f\n",n1,n2,n1-n2);
+	printf("the decress of %f and %f : %f\n",n1,n2,n1-n2);
 }
 void multiplication()
 {
@@ -37,7 +37,7 @@ void devition()
 	printf("enter a second number:- ");
 	scanf("%f",&n2);
  
-	printf("the divition of %f and %f is %f\n",n1,n2,n1/n2);
+	printf("the divition of %f and %f : %f\n",n1,n2,n1/n2);
 }
 void module()
 {
@@ -47,7 +47,7 @@ void module()
 	printf("enter a second number:- ");
 	scanf("%d",&n3);
  
-	printf("the module of %d and %d is %d\n",n4,n3,n4%n3);
+	printf("the module of %d and %d : %d\n",n4,n3,n4%n3);
 }
 void main()
 {
@@ -61,29 +61,29 @@ void main()
 	printf("2 for - \n");
 	printf("3 for * \n");
 	printf("4 for / \n");
-	printf("5 for % \n");
+	printf("5 for %% \n");
 	printf("0 for exit\n");
 	printf("Enter your choice:-");
 	scanf("%d",&choice);
 	switch(choice){
 			case 1:
-				addition(n1+n2);
+				addition();
 				break;
 				
 			case 2:
-				decress(n1-n2);
+				decress();
 				break;
 			
 			case 3:
-				multiplication(n1*n2);
+				multiplication();
 				break;
 			
 			case 4:
-				devition(n1/n2);
+				devition();
 				break;
 			
 			case 5:
-				module(n4%n3);
+				module();
 				break;
 			
 			default:
